@@ -1,4 +1,5 @@
 get:
+  operationId: getOrganization
   parameters:
     - name: organization_id
       in: path
@@ -17,6 +18,7 @@ get:
         * Invalid organization ID
         * User not part of organization
 put:
+  operationId: updateOrganization
   description: Updates an existing organization
   parameters:
     - name: organization_id

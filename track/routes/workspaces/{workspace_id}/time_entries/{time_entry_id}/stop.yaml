@@ -1,4 +1,5 @@
 patch:
+  operationId: stopWorkspaceTimeEntry
   description: Stops a workspace time entry.
   parameters:
     - name: workspace_id

@@ -1,4 +1,5 @@
 post:
+  operationId: createOrganization
   description: Creates a new organization with a single workspace and assigns current user as the organization owner
   requestBody:
     content:

@@ -153,6 +153,7 @@ patch:
         * Cannot remove the paying user with organization user ID='...'.
         * Cannot remove the organization owner user with organization user ID='...'.
 delete:
+  operationId: deleteOrganizationUser
   description: Leaves organization, effectively delete user account in org and delete organization if it is last user
   parameters:
     - name: organization_id
