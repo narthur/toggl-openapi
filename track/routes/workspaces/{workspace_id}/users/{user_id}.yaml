@@ -1,6 +1,7 @@
 put:
-  summary: Update workspace user
   operationId: updateWorkspaceUser
+  summary: Update workspace user
+
   parameters:
     - name: workspace_id
       in: path
