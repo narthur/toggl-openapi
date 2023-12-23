@@ -1,4 +1,5 @@
 get:
+  operationId: getWorkspaceStatistics
   summary: Returns workspace admins list, members count and groups count
   parameters:
     - name: workspace_id

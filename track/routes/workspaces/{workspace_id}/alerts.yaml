@@ -1,4 +1,5 @@
 post:
+  operationId: createWorkspaceAlert
   summary: Handles POST alert requests
   description: Handles POST alert requests.
   parameters:

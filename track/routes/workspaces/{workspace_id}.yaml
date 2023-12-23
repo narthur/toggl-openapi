@@ -1,4 +1,5 @@
 get:
+  operationId: getWorkspace
   summary: Get information of single workspace
   description: Get information of single workspace.
   parameters:
@@ -20,6 +21,7 @@ get:
     500:
       description: Internal Server Error
 put:
+  operationId: updateWorkspace
   summary: Update a specific workspace
   description: Update a specific workspace.
   parameters:

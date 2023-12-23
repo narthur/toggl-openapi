@@ -1,4 +1,5 @@
 get:
+  operationId: getWorkspaceUsers
   summary: List of users who belong to given workspace
   description: Returns any users who belong to the workspace directly or through at least one group.
   parameters:
@@ -75,6 +76,7 @@ get:
     "404":
       description: Not Found
 patch:
+  operationId: updateWorkspaceUsers
   summary: Changes the users in a workspace
   description: Changes the users in a workspace (currently deletion only)
   parameters:

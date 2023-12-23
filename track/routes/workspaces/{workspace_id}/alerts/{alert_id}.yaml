@@ -1,4 +1,5 @@
 delete:
+  operationId: deleteWorkspaceAlert
   summary: Handles DELETE alert requests
   description: Handles DELETE alert requests.
   parameters:
