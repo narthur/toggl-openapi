@@ -1,4 +1,5 @@
 get:
+  operationId: getWorkspaceTrackReminders
   summary: Returns a list of track reminders
   parameters:
     - name: workspace_id
@@ -48,6 +49,7 @@ get:
     "500":
       description: Internal Server Error
 post:
+  operationId: createWorkspaceTrackReminder
   summary: Creates a workspace tracking reminder
   parameters:
     - name: workspace_id
