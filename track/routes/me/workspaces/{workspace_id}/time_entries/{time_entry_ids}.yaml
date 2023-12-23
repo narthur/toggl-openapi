@@ -52,5 +52,7 @@ patch:
                 description: The IDs for which the patch was succesful.
                 items:
                   type: integer
+    "403":
+      description: Operation Forbidden
     "500":
       description: Internal Server Error
