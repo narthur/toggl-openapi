@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "redocly lint ./track/spec.yaml"
+    "lint": "redocly lint ./track/spec.yaml",
+    "build": "redocly build-docs ./track/spec.yaml"
   },
   "keywords": [],
   "author": "",
