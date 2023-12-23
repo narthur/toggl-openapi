@@ -1,4 +1,5 @@
 patch:
+  operationId: patchWorkspaceTimeEntries
   description: "In short: http://tools.ietf.org/html/rfc6902 and http://tools.ietf.org/html/rfc6901 with some additions. Patch will be executed partially when there are errors with some records. No transaction, no rollback."
   parameters:
     - name: workspace_id

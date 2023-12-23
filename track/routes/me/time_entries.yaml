@@ -1,4 +1,5 @@
 get:
+  operationId: getMeTimeEntries
   description: Lists latest time entries.
   parameters:
     - name: since

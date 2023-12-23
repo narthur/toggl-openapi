@@ -1,4 +1,5 @@
 get:
+  operationId: getMeTimeEntryCurrent
   description: Load running time entry for user ID.
   responses:
     "200":

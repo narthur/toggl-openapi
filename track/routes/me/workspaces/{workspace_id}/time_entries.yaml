@@ -1,4 +1,5 @@
 post:
+  operationId: createMeWorkspaceTimeEntry
   description: Creates a new workspace TimeEntry.
   parameters:
     - name: workspace_id

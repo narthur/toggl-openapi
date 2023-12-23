@@ -1,4 +1,5 @@
 get:
+  operationId: getWorkspacePreferences
   summary: Get the preferences for a given workspace.
   parameters:
     - name: workspace_id
@@ -24,6 +25,7 @@ get:
     "500":
       description: Internal Server Error
 post:
+  operationId: updateWorkspacePreferences
   summary: Update the preferences for a given workspace.
   parameters:
     - name: workspace_id
