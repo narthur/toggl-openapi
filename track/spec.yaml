@@ -1,0 +1,126 @@
+openapi: 3.0.0
+info:
+  title: Toggl API
+  version: 1.0.0
+servers:
+  - url: https://api.track.toggl.com/api/v9/
+components:
+  securitySchemes:
+    basicAuth:
+      type: http
+      scheme: basic
+security:
+  - basicAuth: []
+paths:
+  /me:
+    $ref: "routes/me.yaml"
+  /me/clients:
+    $ref: "routes/me/clients.yaml"
+  /me/features:
+    $ref: "routes/me/features.yaml"
+  /me/location:
+    $ref: "routes/me/location.yaml"
+  /me/logged:
+    $ref: "routes/me/logged.yaml"
+  /me/organizations:
+    $ref: "routes/me/organizations.yaml"
+  /me/projects:
+    $ref: "routes/me/projects.yaml"
+  /me/projects/paginated:
+    $ref: "routes/me/projects/paginated.yaml"
+  /me/tags:
+    $ref: "routes/me/tags.yaml"
+  /me/tasks:
+    $ref: "routes/me/tasks.yaml"
+  /me/track_reminders:
+    $ref: "routes/me/track_reminders.yaml"
+  /me/web-timer:
+    $ref: "routes/me/web-timer.yaml"
+  /me/workspaces:
+    $ref: "routes/me/workspaces.yaml"
+  /me/preferences:
+    $ref: "routes/me/preferences.yaml"
+  /me/preferences/{client}:
+    $ref: "routes/me/preferences/{client}.yaml"
+  /workspaces/{workspace_id}/preferences:
+    $ref: "routes/workspaces/{workspace_id}/preferences.yaml"
+  /me/reset_token:
+    $ref: "routes/me/reset_token.yaml"
+  /me/time_entries:
+    $ref: "routes/me/time_entries.yaml"
+  /me/time_entries/current:
+    $ref: "routes/me/time_entries/current.yaml"
+  /me/workspaces/{workspace_id}/time_entries:
+    $ref: "routes/me/workspaces/{workspace_id}/time_entries.yaml"
+  /me/workspaces/{workspace_id}/time_entries/{time_entry_ids}:
+    $ref: "routes/me/workspaces/{workspace_id}/time_entries/{time_entry_ids}.yaml"
+  /me/workspaces/{workspace_id}/time_entries/{time_entry_id}:
+    $ref: "routes/me/workspaces/{workspace_id}/time_entries/{time_entry_id}.yaml"
+  /workspaces/{workspace_id}/time_entries/{time_entry_id}/stop:
+    $ref: "routes/workspaces/{workspace_id}/time_entries/{time_entry_id}/stop.yaml"
+  /organizations:
+    $ref: "routes/organizations.yaml"
+  /organizations/{organization_id}:
+    $ref: "routes/organizations/{organization_id}.yaml"
+  /organizations/{organization_id}/users:
+    $ref: "routes/organizations/{organization_id}/users.yaml"
+  /organizations/{organization_id}/users/{organization_user_id}:
+    $ref: "routes/organizations/{organization_id}/users/{organization_user_id}.yaml"
+  /organizations/{organization_id}/workspaces/statistics:
+    $ref: "routes/organizations/{organization_id}/workspaces/statistics.yaml"
+  /organizations/{organization_id}/workspaces/{workspace_id}/assignments:
+    $ref: "routes/organizations/{organization_id}/workspaces/{workspace_id}/assignments.yaml"
+  /organizations/invitations/{invitation_code}/accept:
+    $ref: "routes/organizations/invitations/{invitation_code}/accept.yaml"
+  /organizations/invitations/{invitation_code}/reject:
+    $ref: "routes/organizations/invitations/{invitation_code}/reject.yaml"
+  /organizations/{organization_id}/invitations:
+    $ref: "routes/organizations/{organization_id}/invitations.yaml"
+  /organizations/{organization_id}/invitations/{invitation_code}/resend:
+    $ref: "routes/organizations/{organization_id}/invitations/{invitation_code}/resend.yaml"
+  /organizations/{organization_id}/groups:
+    $ref: "routes/organizations/{organization_id}/groups.yaml"
+  /organizations/{organization_id}/groups/{group_id}:
+    $ref: "routes/organizations/{organization_id}/groups/{group_id}.yaml"
+  /organizations/{organization_id}/workspaces/{workspace_id}/groups:
+    $ref: "routes/organizations/{organization_id}/workspaces/{workspace_id}/groups.yaml"
+  /workspaces/{workspace_id}/project_groups:
+    $ref: "routes/workspaces/{workspace_id}/project_groups.yaml"
+  /workspaces/{workspace_id}/project_groups/{project_group_id}:
+    $ref: "routes/workspaces/{workspace_id}/project_groups/{project_group_id}.yaml"
+  /organizations/{organization_id}/workspaces:
+    $ref: "routes/organizations/{organization_id}/workspaces.yaml"
+  /organizations/{organization_id}/workspaces/{workspace_id}/workspace_users:
+    $ref: "routes/organizations/{organization_id}/workspaces/{workspace_id}/workspace_users.yaml"
+  /workspaces:
+    $ref: "routes/workspaces.yaml"
+  /workspaces/{workspace_id}:
+    $ref: "routes/workspaces/{workspace_id}.yaml"
+  /workspaces/{workspace_id}/alerts:
+    $ref: "routes/workspaces/{workspace_id}/alerts.yaml"
+  /workspaces/{workspace_id}/alerts/{alert_id}:
+    $ref: "routes/workspaces/{workspace_id}/alerts/{alert_id}.yaml"
+  /workspaces/{workspace_id}/statistics:
+    $ref: "routes/workspaces/{workspace_id}/statistics.yaml"
+  /workspaces/{workspace_id}/time_entry_constraints:
+    $ref: "routes/workspaces/{workspace_id}/time_entry_constraints.yaml"
+  /workspaces/{workspace_id}/track_reminders:
+    $ref: "routes/workspaces/{workspace_id}/track_reminders.yaml"
+  /workspaces/{workspace_id}/track_reminders/{reminder_id}:
+    $ref: "routes/workspaces/{workspace_id}/track_reminders/{reminder_id}.yaml"
+  /workspaces/{workspace_id}/users:
+    $ref: "routes/workspaces/{workspace_id}/users.yaml"
+  /workspaces/{workspace_id}/users/{user_id}:
+    $ref: "routes/workspaces/{workspace_id}/users/{user_id}.yaml"
+  /workspaces/{workspace_id}/users/{user_id}/lost_password:
+    $ref: "routes/workspaces/{workspace_id}/users/{user_id}/lost_password.yaml"
+  /workspaces/{workspace_id}/workspace_users/{workspace_user_id}:
+    $ref: "routes/workspaces/{workspace_id}/workspace_users/{workspace_user_id}.yaml"
+  /workspaces/{workspace_id}/clients:
+    $ref: "routes/workspaces/{workspace_id}/clients.yaml"
+  /workspaces/{workspace_id}/clients/{client_id}:
+    $ref: "routes/workspaces/{workspace_id}/clients/{client_id}.yaml"
+  /workspaces/{workspace_id}/clients/{client_id}/archive:
+    $ref: "routes/workspaces/{workspace_id}/clients/{client_id}/archive.yaml"
+  /workspaces/{workspace_id}/clients/{client_id}/restore:
+    $ref: "routes/workspaces/{workspace_id}/clients/{client_id}/restore.yaml"
