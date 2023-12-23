@@ -1,4 +1,5 @@
 get:
+  operationId: getMeTags
   summary: Returns a list of tags for the current user.
   parameters:
     - name: since

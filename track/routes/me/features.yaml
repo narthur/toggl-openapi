@@ -1,4 +1,5 @@
 get:
+  operationId: getMeFeatures
   summary: Returns a list of features for the current user.
   responses:
     "200":

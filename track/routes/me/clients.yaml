@@ -1,4 +1,5 @@
 get:
+  operationId: getMeClients
   summary: Returns a list of clients for the current user.
   parameters:
     - name: since
@@ -15,5 +16,7 @@ get:
             type: array
             items:
               $ref: "../../schemas/Client.yaml"
+    "403":
+      description: User does not have access to this resource.
     "500":
       description: Internal Server Error

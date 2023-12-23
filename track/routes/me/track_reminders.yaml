@@ -1,4 +1,5 @@
 get:
+  operationId: getMeTrackReminders
   summary: Returns a list of track reminders for the current user.
   responses:
     "200":

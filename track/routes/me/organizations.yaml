@@ -1,4 +1,5 @@
 get:
+  operationId: getMeOrganizations
   summary: Returns a list of organizations for the current user.
   responses:
     "200":
@@ -9,5 +10,7 @@ get:
             type: array
             items:
               $ref: "../../schemas/Organization.yaml"
+    "403":
+      description: User does not have access to this resource.
     "500":
       description: Internal Server Error

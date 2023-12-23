@@ -1,4 +1,5 @@
 get:
+  operationId: getMePreferences
   summary: Returns user preferences and alpha features. The list of alpha features contains a full list of feature codes (every feature that exists in database) and the enabled flag specifying if that feature should be enabled or disabled for the user.
   responses:
     "200":
@@ -12,6 +13,7 @@ get:
     "500":
       description: Internal Server Error
 post:
+  operationId: updateMePreferences
   summary: With this endpoint, preferences can be modified and alpha features can be enabled or disabled.
   requestBody:
     content:

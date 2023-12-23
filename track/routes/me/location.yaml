@@ -1,4 +1,5 @@
 get:
+  operationId: getMeLocation
   summary: Returns the client's IP-based location. If no data is present, empty response will be yielded.
   responses:
     "200":

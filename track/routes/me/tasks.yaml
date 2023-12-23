@@ -1,4 +1,5 @@
 get:
+  operationId: getMeTasks
   summary: Returns tasks from projects in which the user is participating.
   parameters:
     - name: since
