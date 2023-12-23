@@ -1,4 +1,5 @@
 put:
+  operationId: updateWorkspaceAssignments
   description: Assign or remove users to/from a workspace or to/from groups belonging to said workspace.
   parameters:
     - name: organization_id

@@ -1,4 +1,5 @@
 get:
+  operationId: getOrganizationGroups
   summary: List of groups in organization with user and workspace assignments
   parameters:
     - name: organization_id
@@ -52,6 +53,7 @@ get:
     "400":
       description: Invalid Parameters
 post:
+  operationId: createOrganizationGroup
   summary: Create a Group in organization
   parameters:
     - name: organization_id

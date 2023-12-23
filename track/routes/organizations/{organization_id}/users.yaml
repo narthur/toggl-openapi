@@ -1,4 +1,5 @@
 get:
+  operationId: getOrganizationUsers
   description: "Returns list of users in organization based on set of url parameters: Result is paginated. Pagination params are returned in headers"
   parameters:
     - name: organization_id
@@ -120,6 +121,7 @@ get:
     "500":
       description: Internal Server Error
 patch:
+  operationId: pathOrganizationUsers
   description: Apply changes in bulk to users in an organization (currently deletion only).
   parameters:
     - name: organization_id

@@ -1,4 +1,5 @@
 post:
+  operationId: acceptOrganizationInvitation
   description: User connected with invitation is marked as joined, email is sent to the inviter.
   parameters:
     - in: path

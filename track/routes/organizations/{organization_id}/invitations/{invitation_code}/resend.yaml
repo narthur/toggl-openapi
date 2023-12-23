@@ -1,4 +1,5 @@
 put:
+  operationId: resendOrganizationInvitation
   description: Resend invitation email to user.
   parameters:
     - in: path

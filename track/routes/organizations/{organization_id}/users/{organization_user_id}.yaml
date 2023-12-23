@@ -1,4 +1,5 @@
 put:
+  operationId: updateOrganizationUser
   description: Changes a single organization-user.
   parameters:
     - name: organization_id

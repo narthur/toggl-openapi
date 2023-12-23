@@ -1,4 +1,5 @@
 get:
+  operationId: getOrganizationWorkspacesStatistics
   description: Returns map indexed by workspace ID where each map element contains workspace admins list, members count and groups count.
   responses:
     "200":
