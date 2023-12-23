@@ -86,7 +86,7 @@ put:
       description: User does not have access to this resource.
     "500":
       description: Internal Server Error
-deleted:
+delete:
   parameters:
     - name: workspace_id
       in: path
