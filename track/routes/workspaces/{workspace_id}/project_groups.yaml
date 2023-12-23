@@ -1,4 +1,5 @@
 get:
+  operationId: getWorkspaceProjectGroups
   summary: Get project groups for given workspace
   parameters:
     - name: workspace_id
@@ -35,6 +36,7 @@ get:
     "500":
       description: Internal Server Error
 post:
+  operationId: addWorkspaceProjectGroup
   summary: Adds group to project for given workspace
   parameters:
     - name: workspace_id

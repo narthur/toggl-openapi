@@ -1,4 +1,5 @@
 put:
+  operationId: updateOrganizationGroup
   summary: Edit a Group in an organization
   parameters:
     - name: organization_id
@@ -68,6 +69,7 @@ put:
     "404":
       description: Invalid group ID
 delete:
+  operationId: deleteOrganizationGroup
   summary: Deletes a group from the specified organization
   parameters:
     - name: organization_id
@@ -88,6 +90,7 @@ delete:
     "404":
       description: Invalid group ID
 patch:
+  operationId: patchOrganizationGroup
   summary: Patches a Group in an organization. Patches are applied individually.
   parameters:
     - name: organization_id

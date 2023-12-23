@@ -1,4 +1,5 @@
 get:
+  operationId: getOrganizationWorkspaceGroups
   summary: Returns list of groups in a workspace within an organization
   parameters:
     - name: organization_id
