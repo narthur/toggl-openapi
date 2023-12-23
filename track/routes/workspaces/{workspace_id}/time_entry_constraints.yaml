@@ -1,4 +1,5 @@
 get:
+  operationId: getWorkspaceTimeEntryConstraints
   summary: Get the time entry constraints for a given workspace
   parameters:
     - name: workspace_id
